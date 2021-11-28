@@ -1,9 +1,15 @@
+$colors: (
+  primary: #f57009,
+  secondary: #fde4d0,
+  dark: #1c1a30,
+  blue: #414eff,
+);
+
 :root {
-  --primary: #f57009;
-  --secondary: #fde4d0;
-  --dark: #1c1a30;
-  --blue: #414eff;
-}
+  @each $property, $value in $colors {
+    --#{$property}: #{$value};
+  }
+};
 
 $primary: var(--primary);
 $secondary: var(--secondary);

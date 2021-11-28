@@ -1,1 +1,30 @@
-
+.btn {
+  border: none;
+  outline: none;
+  padding: 0.8rem 1.4rem;
+  border-radius: 7px;
+  transition: all 0.2s;
+  cursor: pointer;
+  margin-left: 15px;
+}
+@mixin buttonStyle($variant, $bg, $color) {
+  .btn-#{$variant} {
+    @extend .btn;
+    background: $bg;
+    color: $color;
+    &:hover {
+      //background: darken(#fff, 50); //0-100
+      box-shadow: 0 10px 15px -10px $bg;
+    }
+    &:focus-within {
+      outline: 2px solid $bg;
+      outline-offset: 2px;
+      box-shadow: none;
+    }
+  }
+}
+@include buttonStyle(danger, deeppink, white);
+@include buttonStyle(primary, $primary, white);
+@include buttonStyle(dark, $dark, white);
+@include buttonStyle(blue, $blue, white);
+@include buttonStyle(secondary, $secondary, white);

@@ -1,7 +1,9 @@
+@import url("./variable.css");
 @import "./Partials/variables";
-@import "./Partials/common";
-@import "./Partials/reset";
 * {
   font-family: "Open Sans", "Helvetica Neue", sans-serif;
-  color: $blue;
+  color: $primary;
 }
+@import "./Partials/reset";
+@import "./Partials/common";
+@import "./Partials/mixins";

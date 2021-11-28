@@ -1,3 +1,4 @@
+@import url("./variable.css");
 :root {
   --primary: #f57009;
   --secondary: #fde4d0;
@@ -5,12 +6,107 @@
   --blue: #414eff;
 }
 
-a {
-  text-decoration: none;
-  font-size: 20px;
-}
-
 * {
   font-family: "Open Sans", "Helvetica Neue", sans-serif;
-  color: var(--blue);
+  color: var(--primary);
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn, .btn-danger, .btn-primary, .btn-dark, .btn-blue, .btn-secondary {
+  border: none;
+  outline: none;
+  padding: 0.8rem 1.4rem;
+  border-radius: 8px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  cursor: pointer;
+  margin-left: 15px;
+}
+
+.btn-danger {
+  background: deeppink;
+  color: white;
+}
+
+.btn-danger:hover {
+  -webkit-box-shadow: 0 10px 15px -10px deeppink;
+          box-shadow: 0 10px 15px -10px deeppink;
+}
+
+.btn-danger:focus-within {
+  outline: 2px solid deeppink;
+  outline-offset: 2px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.btn-primary {
+  background: var(--primary);
+  color: white;
+}
+
+.btn-primary:hover {
+  -webkit-box-shadow: 0 10px 15px -10px var(--primary);
+          box-shadow: 0 10px 15px -10px var(--primary);
+}
+
+.btn-primary:focus-within {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.btn-dark {
+  background: var(--dark);
+  color: white;
+}
+
+.btn-dark:hover {
+  -webkit-box-shadow: 0 10px 15px -10px var(--dark);
+          box-shadow: 0 10px 15px -10px var(--dark);
+}
+
+.btn-dark:focus-within {
+  outline: 2px solid var(--dark);
+  outline-offset: 2px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.btn-blue {
+  background: var(--blue);
+  color: white;
+}
+
+.btn-blue:hover {
+  -webkit-box-shadow: 0 10px 15px -10px var(--blue);
+          box-shadow: 0 10px 15px -10px var(--blue);
+}
+
+.btn-blue:focus-within {
+  outline: 2px solid var(--blue);
+  outline-offset: 2px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.btn-secondary {
+  background: var(--secondary);
+  color: white;
+}
+
+.btn-secondary:hover {
+  -webkit-box-shadow: 0 10px 15px -10px var(--secondary);
+          box-shadow: 0 10px 15px -10px var(--secondary);
+}
+
+.btn-secondary:focus-within {
+  outline: 2px solid var(--secondary);
+  outline-offset: 2px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
